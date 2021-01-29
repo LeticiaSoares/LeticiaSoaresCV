@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import NavbarItem from "./NavBarItem";
+import Menu from "./Menu";
 
 const Nav = styled.nav`
   width: 100%;
@@ -19,7 +19,7 @@ const Nav = styled.nav`
 const Navbar = ()=>{
     return (
         <Nav>
-            <NavbarItem/>
+            <Menu/>
         </Nav>
     )
 }
