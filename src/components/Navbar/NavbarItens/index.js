@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Link, NavOptions} from "../styles";
 
 const NavbarItens = () =>{
     return(
         <NavOptions>
             <Link>Home</Link>
-            <Link>About</Link>
+            <Link href='#about'>About</Link>
             <Link>Resume</Link>
             <Link>Works</Link>
             <Link>Contacts</Link>

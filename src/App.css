@@ -1,5 +1,6 @@
 html, body {
     margin: 0;
-    height: 100%;
-    overflow: hidden
+    font-family:'opensans-bold', sans-serif;
+    width: 100vw;
+    scroll-behavior: smooth
 }

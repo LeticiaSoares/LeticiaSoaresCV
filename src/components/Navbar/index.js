@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Menu from "./Menu";
+import NavbarItens from "./NavbarItens";
 
 const Nav = styled.nav`
   width: 100%;
@@ -14,13 +15,14 @@ const Nav = styled.nav`
   position: fixed;
   left: 0;
   top: 0;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
 `
-
-const Navbar = ()=>{
+const Navbar =()=>{
     return (
-        <Nav>
-            <Menu/>
-        </Nav>
+            <Nav>
+                <Menu/>
+                <NavbarItens/>
+            </Nav>
     )
 }
 

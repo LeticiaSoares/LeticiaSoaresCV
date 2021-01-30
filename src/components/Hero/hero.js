@@ -1,22 +1,15 @@
 import React from 'react'
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import styled from  'styled-components'
 import space from  '../../assets/space.png'
-
-const Section = styled.section`
-    position: absolute;
-    top: 48px;
-    height: 700px;
-    left: 0;
-    width: 100%;
-    background-image: url(${space});
-`
+import Section from  '../Section'
 
 const Title = styled.h1`
     font: 70px/1.1em 'opensans-bold', sans-serif;
     color: #fff;
     letter-spacing: -2px;
-    margin-top: 190px;
+    //margin-top: 190px;
     text-align: center;
 `
 
@@ -31,15 +24,36 @@ const SocialMedias = styled.div`
   display: flex;
   color: #fff;
   justify-content: center;
+  svg {
+    width: 50px;
+    height: 50px;
+  }
+`
+
+const SocialMediaLink = styled.a`
+  cursor: pointer;
+  font-style: unset;
+  color: #fff;
 `
 
 const Hero = ()=>{
     return (
-        <Section>
+        <Section image={space} margin={'-60px'}>
             <Title>Leticia Soares</Title>
             <Subtitle>Frontend Developer</Subtitle>
             <SocialMedias>
-                <LinkedInIcon/>
+                <SocialMediaLink
+                    href='https://www.linkedin.com/in/leticiasoaresfrontenddeveloper/'
+                    target='_blank'
+                >
+                    <LinkedInIcon/>
+                </SocialMediaLink>
+                <SocialMediaLink
+                    href='https://github.com/LeticiaSoares'
+                    target='_blank'
+                >
+                    <GitHubIcon/>
+                </SocialMediaLink>
             </SocialMedias>
         </Section>
     )

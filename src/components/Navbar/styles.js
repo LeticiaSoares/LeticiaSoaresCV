@@ -16,7 +16,7 @@ export const MenuOptions = styled.ul`
   position: fixed;
   top: 0;
   right: 0;
-  background-color: mediumpurple;
+  background-color: mediumslateblue;
   margin:0;
   padding-top: 10px;
   overflow: scroll;
@@ -36,7 +36,7 @@ export const MenuOptions = styled.ul`
   }
   to {
     height: 100vh;
-    background-color: mediumpurple;
+    background-color: mediumslateblue;
   }
 }
 `
@@ -48,12 +48,16 @@ export const Link = styled.a`
     text-align: left;
     color: #fff;
     transition: color .2s ease-in-out;
-    margin: 0;
     border: none;
     outline: none;
     display:block;
+    margin:20px 0 20px;
+    font-size: 18px;
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
     :hover{
-      color: yellow;
+      color: #ffd534;
       cursor: pointer;
     }
 `
@@ -71,6 +75,7 @@ export const MenuButton = styled.i`
   margin-right: 20px;
   @media (min-width: 768px) {
     display: none;
+    margin: 0;
   }
 `
 
