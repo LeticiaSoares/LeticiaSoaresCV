@@ -26,7 +26,7 @@ const MenuMoBile = ()=>{
                     </MenuButtonClose>
                     <Link>Home</Link>
                     <Link onClick={()=>setShow(false)} href='#about'>About</Link>
-                    <Link>Resume</Link>
+                    <Link onClick={()=>setShow(false)} href='#resume'>Resume</Link>
                     <Link>Works</Link>
                     <Link>Contacts</Link>
                 </MenuOptions>

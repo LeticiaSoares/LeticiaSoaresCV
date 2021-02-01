@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Container from './components/Container'
 import Hero from './components/Hero'
 import About from './components/About'
+import Resume from './components/Resume'
 import './App.css'
 
 window.addEventListener('scroll', () => {
@@ -12,11 +13,12 @@ window.addEventListener('scroll', () => {
 class App extends Component {
   render () {
     return (
-        <Container>
+        <>
             <Navbar/>
             <Hero/>
             <About/>
-        </Container>
+            <Resume/>
+        </>
     )
   }
 }

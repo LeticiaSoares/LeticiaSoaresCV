@@ -6,7 +6,7 @@ const NavbarItens = () =>{
         <NavOptions>
             <Link>Home</Link>
             <Link href='#about'>About</Link>
-            <Link>Resume</Link>
+            <Link href='#resume'>Resume</Link>
             <Link>Works</Link>
             <Link>Contacts</Link>
         </NavOptions>

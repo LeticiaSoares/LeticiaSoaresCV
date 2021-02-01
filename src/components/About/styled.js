@@ -5,9 +5,8 @@ export const Photo = styled.img`
   width: 150px;
   height: 150px;
   border-radius: 100%;
-  @media (min-width: 768px) {
-    margin-right: 50px;
-  }
+  margin: 0 auto;
+  display: block;
 `
 
 export const Text = styled.p`
@@ -28,6 +27,6 @@ export const Title = styled.p`
 
 export const Description = styled.div`
    @media (min-width: 768px) {
-      width: 500px;
+      //width: 500px;
    }
 `
